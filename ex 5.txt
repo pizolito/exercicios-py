@@ -1,0 +1,11 @@
+
+exercicio 5:
+nota1 = int(input("Digite a nota 1 do aluno:"))
+nota2 = int(input("Digite a nota 2 do aluno:"))
+media = (nota1 + nota2)/2
+if media >=7:
+    print("aprovado")
+elif media <7:
+    print("reprovado")
+elif media == 10:
+    print("aprovado com distinção")
