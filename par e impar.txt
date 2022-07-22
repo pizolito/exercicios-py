@@ -1,0 +1,7 @@
+for i in range (10):
+    num = int(input("digite um numero: "))
+    resul = num % 2
+    if resul == 0:
+        print("o numero {} é par".format(num))
+    else:
+        print("o numero{} é impar".format(num))

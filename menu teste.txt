@@ -1,0 +1,165 @@
+import os
+
+while True:
+    print("Menu Principal")
+    print("1-pacientes")
+    print("2-Estoque")
+    print("3-Colaboradores")
+    print("4-Fornecedores")
+    print("5-Contas")
+    print("6-Nutricionistas")
+    print("7-Sair")
+    codigo=int(input("Digite a opção:"))
+    os.system("cls")
+    if codigo ==1:
+        while True:
+            print ("1-Incluir")
+            print("2-Excluir")
+            print("3-Relatorio")
+            print("4-Sair")
+            num=int(input("Digite a opção:"))
+            if num==1:
+                print("Selecionou a opção 1!")
+                nome = input ("Digite o nome do usuário:")
+                End = input ("Digite o endereço do usuário:")
+                Fone = int(input ("Digite o telefone do usuário:"))
+                Email = input ("Digite o E-mail do usuário:")
+                Sexo = input ("Digite o sexo do usuário:")
+                Data = int(input ("Digite a data do usuário:"))
+                Renda = float(input ("Digite a renda do usuário:"))
+                Doenca = input ("Digite a doença do usuário:")
+                Nis = int(input ("Digite o número do NIS do usuário:"));
+            elif num ==2:
+                print("Nao tem nada para ser excluido!")
+            elif num==3:
+                 print ("Nome:",nome)
+                 print ("Endereço:",End)
+                 print ("Telefone:",Fone)
+                 print ("Email:",Email)
+                 print ("Sexo:",Sexo)
+                 print ("Data de nascimento:",Data)
+                 print ("Renda:",Renda)
+                 print ("Doença:",Doenca)
+                 print ("NIS:", Nis)
+            elif num==4:
+             break
+    elif codigo==2:
+         while True:
+            print ("1-Incluir")
+            print("2-Excluir")
+            print("3-Relatorio")
+            print("4-Sair")
+            num=int(input("Digite a opção:"))
+            if num==1:
+                Produto=input("Digite o nome do produto:")
+                Quantidade=int(input("Digite a quantidade:"))
+                Validade=int(input("Digite a validade"))
+                Fornecedor=input("Digite o nome do Fornecedor:")
+            elif num ==2:
+                print("Nao tem nada para ser excluido!")
+            elif num==3:
+                 print ("Produto:",Produto)
+                 print ("Quantidade:",Quantidade)
+                 print ("Validade:",Validade)
+                 print ("Fornecedor:",Fornecedor)
+            elif num==4:
+                break
+
+    elif codigo==3:
+        while True:
+            print ("1-Incluir")
+            print("2-Excluir")
+            print("3-Relatorio")
+            print("4-Sair")
+            num=int(input("Digite a opção:"))
+            if num==1:
+                nome = input ("Digite o nome da empresa:")
+                End = input ("Digite o endereço da empresa:")
+                Fone = int(input ("Digite o telefone da empresa:"))
+                Email = input ("Digite o E-mail da empresa:")
+            elif num==2:
+                print("Nao tem nada para ser excluido!")
+            elif num==3:
+                print("Nome:",nome)
+                print ("Endereço:",End)
+                print ("Telefone:",Fone)
+                print ("Email:",Email)
+            elif num==4:
+                break
+    elif codigo==4:
+         while True:
+            print ("1-Incluir")
+            print("2-Excluir")
+            print("3-Relatorio")
+            print("4-Sair")
+            num=int(input("Digite a opção:"))
+            if num==1:
+                nome = input ("Digite o nome da empresa:")
+                End = input ("Digite o endereço da empresa:")
+                Fone = int(input ("Digite o telefone da empresa:"))
+                Email = input ("Digite o E-mail da empresa:")
+            elif num==2:
+                print("Nao tem nada para ser excluido!")
+            elif num==3:
+                print("Nome:",nome)
+                print ("Endereço:",End)
+                print ("Telefone:",Fone)
+                print ("Email:",Email)
+            elif num==4:
+                break
+    elif codigo==5:
+        while True:
+            print ("1-Incluir")
+            print("2-Excluir")
+            print("3-Relatorio")
+            print("4-Sair")
+            num=int(input("Digite a opção:"))
+            if num==1:
+                nome = input ("Digite o nome do curso:")
+                hr = input ("Digite a hora do curso:")
+                vg = int(input ("Digite o total de vagas:"))
+            elif num==2:
+                print("Nao tem nada para ser excluido!")
+            elif num==3:
+                print("Nome:",nome)
+                print ("Hora do curso:",hr)
+                print ("Vagas:",vg)
+            elif num==4:
+                break
+    elif codigo == 6:
+        while True:
+            print("1-Incluir")
+            print("2-Excluir")
+            print("3-Relatorio")
+            print("4-Sair")
+            num = int(input("Digite a opção:"))
+            if num == 1:
+                peso = float(input("Digite seu peso:"))
+                altura = float(input("Digite sua altura:"))
+                imc = (peso / (altura ** altura))
+                print("o valor do imc é de", "%.2f" % imc)
+                agua = (peso * 35)
+                diviagua = (agua / 1000)
+                print("a sua quantidade de agua corporal é ", diviagua, "litros")
+                tamanhodopulso = float(input("qual o diametro do seu pulso:"))
+                tfemur = float(input("digite o diametro do seu femur:"))
+                tpulso = (altura * tfemur / tamanhodopulso)
+                print("o seu peso ósseo é de:", "%.2f" % tpulso, "kg")
+                gordurac = (peso / altura ** 2)
+                print("o peso da sua massa muscular é de", "%.2f" % gordurac, "kg")
+            elif num == 2:
+                print("Nao tem nada para ser excluido!")
+            elif num == 3:
+                print("peso",peso)
+                altura("altura",altura)
+                imc ("imc",imc)
+                agua("agua",agua)
+                diviagua("diviagua",diviagua)
+                tamanhodopulso("tamanhodopulso",tamanhodopulso)
+                tfemur("tfemur",tfemur)
+                tpulso("tpulso",tpulso)
+                gordurac("dordurac",gordurac)
+            elif num == 4:
+                break
+    elif codigo==7:
+        break
