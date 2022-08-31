@@ -1,9 +1,0 @@
-exercicio 18:
-dia = int(input("digite sua dia:"))
-mes = int(input("mês:"))
-ano = int(input("ano:"))
-if dia > 31 or mes > 12:
-    print("data invalida")
-if dia < 31 or mes < 12:
-    print('{}/{}/{}'.format(dia,mes,ano))
-
